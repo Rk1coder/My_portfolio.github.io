@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
   { href: "#home", label: "Home" },
@@ -28,7 +29,7 @@ export function Navigation() {
       animate={{ y: 0 }}
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        isScrolled ? "bg-background/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
       )}
     >
       <div className="container mx-auto px-4">
@@ -56,6 +57,7 @@ export function Navigation() {
               </a>
             ))}
           </div>
+          <ThemeToggle />
         </div>
       </div>
     </motion.nav>
