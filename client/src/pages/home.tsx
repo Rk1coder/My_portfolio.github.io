@@ -6,12 +6,12 @@ import { Contact } from "@/components/sections/contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <main className="min-h-screen">
       <Navigation />
       <Hero />
       <About />
       <Projects />
       <Contact />
-    </div>
+    </main>
   );
 }
