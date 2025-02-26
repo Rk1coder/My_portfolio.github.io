@@ -49,9 +49,9 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <motion.div variants={itemVariants} className="mb-8 md:mb-0">
               <img 
-                src="/attached_assets/WhatsApp Görsel 2024-09-20 saat 11.35.23_6a0fc72f.jpg" 
+                src="/WhatsApp Görsel 2024-09-20 saat 11.35.23_6a0fc72f.jpg" 
                 alt="Profile" 
-                className="rounded-lg shadow-xl w-full max-w-md mx-auto object-cover"
+                className="rounded-lg shadow-xl w-full max-w-md mx-auto object-cover h-[400px]"
               />
             </motion.div>
             <motion.div variants={itemVariants}>
