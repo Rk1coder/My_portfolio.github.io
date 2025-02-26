@@ -4,6 +4,7 @@ import { ProjectCard } from "@/components/project-card";
 const projects = [
   {
     title: "E-Commerce Platform",
+    image: "/images/ecommerce.jpg",
     description: "A full-stack e-commerce platform with real-time inventory management and payment integration",
     details: "Built with a microservices architecture, this platform handles thousands of transactions daily. Features include real-time inventory tracking, automated order processing, and integrated payment gateway with Stripe.",
     technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],

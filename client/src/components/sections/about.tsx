@@ -47,6 +47,13 @@ export function About() {
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8 items-start">
+            <motion.div variants={itemVariants} className="mb-8 md:mb-0">
+              <img 
+                src="/attached_assets/WhatsApp Görsel 2024-09-20 saat 11.35.23_6a0fc72f.jpg" 
+                alt="Profile" 
+                className="rounded-lg shadow-xl w-full max-w-md mx-auto object-cover"
+              />
+            </motion.div>
             <motion.div variants={itemVariants}>
               <Card className="p-8 backdrop-blur-sm bg-card/80">
                 <h3 className="text-2xl font-semibold mb-6 text-primary">Background</h3>

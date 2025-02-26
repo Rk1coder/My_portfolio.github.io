@@ -12,9 +12,10 @@ interface ProjectCardProps {
   githubUrl: string;
   liveUrl?: string;
   details?: string;
+  image?: string; // Added image prop
 }
 
-export function ProjectCard({ title, description, technologies, githubUrl, liveUrl, details }: ProjectCardProps) {
+export function ProjectCard({ title, description, technologies, githubUrl, liveUrl, details, image }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -23,6 +24,11 @@ export function ProjectCard({ title, description, technologies, githubUrl, liveU
       transition={{ duration: 0.2 }}
     >
       <Card className="h-full overflow-hidden backdrop-blur-sm bg-card/80 border-primary/20">
+        {image && (
+          <div className="w-full h-48 overflow-hidden">
+            <img src={image} alt={title} className="w-full h-full object-cover" />
+          </div>
+        )}
         <CardHeader className="cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}>
           <div className="flex items-center justify-between">
             <CardTitle className="text-xl text-primary">{title}</CardTitle>
