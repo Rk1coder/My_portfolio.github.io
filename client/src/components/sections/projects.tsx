@@ -5,6 +5,7 @@ const projects = [
   {
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce platform with real-time inventory management and payment integration",
+    details: "Built with a microservices architecture, this platform handles thousands of transactions daily. Features include real-time inventory tracking, automated order processing, and integrated payment gateway with Stripe.",
     technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
     githubUrl: "https://github.com/rabiakiratli/ecommerce-platform",
     liveUrl: "https://ecommerce-demo.rabiakiratli.dev"
@@ -12,6 +13,7 @@ const projects = [
   {
     title: "Task Management System",
     description: "A collaborative task management system with real-time updates and team features",
+    details: "Developed a real-time task management system that enables team collaboration with features like live updates, task assignment, and progress tracking. Implements WebSocket for instant notifications.",
     technologies: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
     githubUrl: "https://github.com/rabiakiratli/task-manager",
     liveUrl: "https://tasks.rabiakiratli.dev"
@@ -19,6 +21,7 @@ const projects = [
   {
     title: "Social Media Dashboard",
     description: "Analytics dashboard for social media metrics with data visualization",
+    details: "Created an intuitive dashboard that aggregates social media metrics across multiple platforms. Features interactive charts and customizable reporting tools using D3.js.",
     technologies: ["React", "D3.js", "Node.js", "GraphQL"],
     githubUrl: "https://github.com/rabiakiratli/social-dashboard"
   }
@@ -47,8 +50,9 @@ const cardVariants = {
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="projects" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
+      <div className="container mx-auto px-4 relative">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -56,7 +60,7 @@ export function Projects() {
           variants={containerVariants}
         >
           <motion.h2 
-            className="text-3xl font-bold mb-8 text-center"
+            className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"
             variants={cardVariants}
           >
             Featured Projects
