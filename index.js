@@ -38,6 +38,7 @@ var vite_config_default = defineConfig({
       )
     ] : []
   ],
+  base: "/My_portfolio",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
